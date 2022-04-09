@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+</head>
+<style>
+    .box {
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .arrow-l {
+        position: absolute;
+        left: 0px;
+        display: none;
+        z-index: 1;
+    }
+
+    .arrow-r {
+        position: absolute;
+        right: 0;
+        display: none;
+        z-index: 1;
+    }
+
+    ol {
+        list-style: none;
+        padding: 0px;
+        position: fixed;
+        top: 300px;
+        margin: 0px;
+        padding-left: 201px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+        overflow: auto;
+    }
+
+    .circle li {
+        font-size: 70px;
+        float: left;
+        width: 15px;
+    height: 15px;
+    background-color: #666;
+    margin-right: 5px;
+    }
+
+    .imgBox {
+        width: 400%;
+        overflow: auto;
+        position: relative;
+        right: 0px;
+    }
+
+    .imgBox li {
+        float: left;
+        width: 500px;
+        
+    }
+    .circle .on-y{
+        background-color: #a37b7b;
+    }
+    a {
+        text-decoration: none;
+        background-color: rgb(42 11 11 / 19%);
+        font-size: 40px;
+        top: 128px;
+        border-radius: 15%;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <a href="javascript:;" class="arrow-l"><</a>
+        <a href="javascript:;" class="arrow-r">></a>
+        <ul class="imgBox">
+            <li><img src="./1.jpg" width="500px"></li>
+            <li><img src="./2.jpg" width="500px"></li>
+            <li><img src="./3.jpg" width="500px"></li>
+            <li><img src="./4.jpg" width="500px"></li>
+        </ul>
+        <ol class="circle">
+        </ol>
+    </div>
+</body>
+<script src="./a.js"></script>
+</html>
